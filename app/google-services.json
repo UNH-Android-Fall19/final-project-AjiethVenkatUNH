@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "842094642886",
+    "firebase_url": "https://chatbuzz-56712.firebaseio.com",
+    "project_id": "chatbuzz-56712",
+    "storage_bucket": "chatbuzz-56712.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842094642886:android:a9792f42f52abcce84b9c7",
+        "android_client_info": {
+          "package_name": "edu.newhaven.chatbuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842094642886-e3p18089rpv4lnh70efrcq00u8583848.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwOiW1y4yD6SfzzzTSjtDQSKCA3BUY4Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842094642886-e3p18089rpv4lnh70efrcq00u8583848.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "842094642886-kuosvt8800kdmr6993q8gnit5qp34o4g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ChatBuzz"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

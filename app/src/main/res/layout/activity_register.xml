@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="  Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/username_register"
+        app:layout_constraintStart_toStartOf="@+id/username_register"
+        app:layout_constraintTop_toBottomOf="@+id/username_register" />
+
+    <EditText
+        android:id="@+id/password_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/email_register"
+        app:layout_constraintStart_toStartOf="@+id/email_register"
+        app:layout_constraintTop_toBottomOf="@+id/email_register" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shadow_orange"
+        android:elevation="70dp"
+        android:padding="10dp"
+        android:text="Register"
+        android:textColor="#3E2723"
+        app:layout_constraintEnd_toEndOf="@+id/password_register"
+        app:layout_constraintStart_toStartOf="@+id/password_register"
+        app:layout_constraintTop_toBottomOf="@+id/password_register" />
+
+    <TextView
+        android:id="@+id/signIn_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:text="Already have an account? SignIn"
+        android:textColor="#BDBDBD"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/button_register"
+        app:layout_constraintStart_toStartOf="@+id/button_register"
+        app:layout_constraintTop_toBottomOf="@+id/button_register" />
+
+    <EditText
+        android:id="@+id/username_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="  Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
