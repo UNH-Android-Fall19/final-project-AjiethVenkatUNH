@@ -1,7 +1,6 @@
 package edu.newhaven.chatbuzz
 
 import org.junit.Test
-
 import org.junit.Assert.*
 
 /**
