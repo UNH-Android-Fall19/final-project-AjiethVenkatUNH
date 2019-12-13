@@ -1,34 +1,21 @@
-package edu.newhaven.chatbuzz
+package edu.newhaven.chatbuzz.Controller
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.view.WindowManager
 import android.widget.Toast
-import com.facebook.CallbackManager
-import com.facebook.FacebookCallback
-import com.facebook.FacebookException
-import com.facebook.FacebookSdk;
-import com.facebook.appevents.AppEventsLogger;
-import com.facebook.login.LoginResult
 import com.google.firebase.auth.FirebaseAuth
+import edu.newhaven.chatbuzz.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
-  //  LoginButton loginButton;
-  //  FirebaseUser user;
-  //  CallbackManager callbackManager;
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+/* Setting a singIn button and verfying the user with Email and password*/
 
         button_login.setOnClickListener {
             val email = email_login.text.toString()
@@ -40,8 +27,8 @@ class MainActivity : AppCompatActivity() {
 
             }
             else {
+                  //  emailAndPassword(email,password)
                 val auth = FirebaseAuth.getInstance()
-
                 auth.signInWithEmailAndPassword(email,password)
                     .addOnCompleteListener {
                         if (it.isSuccessful){
@@ -51,10 +38,6 @@ class MainActivity : AppCompatActivity() {
                         }
                     }
             }
-
-            Log.d("MainActivity", "Email is" + email)
-            Log.d("MainActivity", "Password is" + password)
-
         }
 
         signUp_textView.setOnClickListener {
@@ -62,5 +45,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    /* SignIn method by authenticating with Firebase Auth*/
+  //  fun emailAndPassword(email:String, password:String){
+
+    //}
 }
 

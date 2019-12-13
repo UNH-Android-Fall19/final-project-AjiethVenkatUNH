@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#455A64"
-    tools:context=".SettingActivity">
+    tools:context=".Controller.SettingActivity">
 
     <ImageView
         android:id="@+id/imageView6"

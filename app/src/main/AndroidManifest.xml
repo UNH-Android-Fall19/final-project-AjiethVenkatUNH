@@ -14,14 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Controller.ChatMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChatMenuActivity">
+        <activity android:name=".Controller.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,29 +29,30 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RegisterActivity" />
 
-        <activity android:name=".SettingActivity">
+        <activity android:name=".Controller.RegisterActivity" />
+
+        <activity android:name=".Controller.SettingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".RegisterActivity"/>
+                android:value=".Controller.RegisterActivity"/>
         </activity>
         <activity
-            android:name=".ProfileActivity">
+            android:name=".Controller.ProfileActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ChatMenuActivity" />
+                android:value=".Controller.ChatMenuActivity" />
         </activity>
 
-        <activity android:name=".ChatActivity">
+        <activity android:name=".Controller.ChatActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ChatMenuActivity" />
+                android:value=".Controller.ChatMenuActivity" />
         </activity>
-        <activity android:name=".NewMessageActivity">
+        <activity android:name=".Controller.NewMessageActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ChatMenuActivity" />
+                android:value=".Controller.ChatMenuActivity" />
         </activity>
 
 
